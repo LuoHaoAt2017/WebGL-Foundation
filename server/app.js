@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'assets')));
-app.use('/shader', express.static(path.join(__dirname, 'shader')));
 
 app.use(cors({
   origin: 'http://localhost:8080',
