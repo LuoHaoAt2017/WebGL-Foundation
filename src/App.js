@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Route, Routes, Link } from "react-router-dom";
+import Home from './pages/home';
 
 export default function App() {
   return (
@@ -9,20 +10,6 @@ export default function App() {
         <Route path="/about" element={<About></About>}></Route>
       </Routes>
     </div>
-  );
-}
-
-function Home() {
-  return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-    </>
   );
 }
 
