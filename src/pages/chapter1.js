@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "@/styles/home.less";
+import "@/styles/chapter1.less";
 
 const VSHADER_SOURCE = `
   attribute vec4 a_Position;
@@ -19,7 +19,10 @@ const FSHADER_SOURCE = `
   }
 `;
 
-class Home extends React.Component {
+/**
+ * 点击鼠标根据象限绘制不同颜色的点
+ */
+class Chapter1 extends React.Component {
   constructor(props) {
     super(props);
     this.canvasRef = React.createRef();
@@ -131,4 +134,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Chapter1;
