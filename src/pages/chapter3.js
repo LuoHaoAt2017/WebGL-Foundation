@@ -72,15 +72,14 @@ class Chapter2 extends React.Component {
     // 绑定缓冲区对象
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     // 将数据写入缓冲区对象
-    // const vertices = new Float32Array([-0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5]);
-    const vertices = new Float32Array([0.0, 0.5, -0.5, -0.5, 0.5, -0.5]);
+    const vertices = new Float32Array([-0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5]);
     gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
     // 将缓冲区对象分配给一个 attribute 变量
     const a_Position = gl.getAttribLocation(gl.program, "a_Position");
     gl.vertexAttribPointer(a_Position, 2, gl.FLOAT, false, 0, 0);
     // 开启 attribute 变量
     gl.enableVertexAttribArray(a_Position);
-    return 3;
+    return 4;
   }
 }
 
